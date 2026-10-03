@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayesha Cropz | Empowering Business Success Now</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ayesha: {
+                            blue: '#0B2545',
+                            teal: '#134074',
+                            cyan: '#00829B',
+                            lightCyan: '#EEF4F8',
+                            accent: '#8DA9C4',
+                            sodaBlue: '#0284c7',
+                            sodaRed: '#dc2626',
+                            sodaOrange: '#f97316',
+                            sodaGreen: '#16a34a',
+                            sodaPurple: '#9333ea'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .brand-gradient {
+            background: linear-gradient(135deg, #0B2545 0%, #134074 50%, #00829B 100%);
+        }
+        .soda-card-shadow {
+            box-shadow: 0 10px 30px -5px rgba(0, 130, 155, 0.2);
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- Domain Notice for typographical variant -->
+    <div class="bg-amber-50 border-b border-amber-200 text-amber-800 px-4 py-2 text-xs md:text-sm text-center flex items-center justify-center gap-2">
+        <i class="fa-solid fa-circle-info text-amber-600"></i>
+        <span>Official Domain: <strong>ayeshacropz.co.in</strong> (Also serving visitors via ayeshscropz.co.in)</span>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 glass-nav border-b border-slate-200 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo & Name -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-12 h-12 rounded-full bg-ayesha-lightCyan flex items-center justify-center border-2 border-ayesha-cyan shadow-inner">
+                    <svg viewBox="0 0 100 100" class="w-8 h-8 text-ayesha-cyan fill-current">
+                        <path d="M50 10 C 25 35, 25 65, 50 90 C 40 75, 40 25, 50 10 Z" opacity="0.8"/>
+                        <path d="M60 20 C 40 40, 40 60, 60 80 C 52 65, 52 35, 60 20 Z" opacity="0.6"/>
+                    </svg>
+                </div>
+                <div>
+                    <span class="text-xl sm:text-2xl font-extrabold text-ayesha-blue tracking-tight">Ayesha Cropz</span>
+                    <p class="text-[10px] sm:text-xs font-medium text-ayesha-cyan uppercase tracking-wider">Empowering Business Success Now</p>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden lg:flex items-center gap-8 font-medium text-sm text-slate-700">
+                <a href="#home" class="hover:text-ayesha-cyan transition">Home</a>
+                <a href="#about" class="hover:text-ayesha-cyan transition">About Us</a>
+                <a href="#leadership" class="hover:text-ayesha-cyan transition">Leadership</a>
+                <a href="#divisions" class="hover:text-ayesha-cyan transition">Divisions</a>
+                <a href="#products" class="hover:text-ayesha-cyan transition">Ayesha Soda</a>
+                <a href="#orgchart" class="hover:text-ayesha-cyan transition">Organization Chart</a>
+                <a href="#contact" class="hover:text-ayesha-cyan transition">Contact</a>
+            </nav>
+
+            <!-- Action Buttons -->
+            <div class="hidden sm:flex items-center gap-3">
+                <a href="https://wa.me/917666589729?text=Hello%20Ayesha%20Cropz,%20I%20would%20like%20to%20know%20more%20about%20your%20products%20and%20services." target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2.5 rounded-xl font-semibold text-sm flex items-center gap-2 shadow-md transition transform hover:-translate-y-0.5">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp Chat
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-btn" class="lg:hidden text-slate-700 hover:text-ayesha-cyan text-2xl p-2 focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-4 space-y-3 shadow-xl">
+            <a href="#home" class="block font-medium text-slate-700 hover:text-ayesha-cyan py-1">Home</a>
+            <a href="#about" class="block font-medium text-slate-700 hover:text-ayesha-cyan py-1">About Us</a>
+            <a href="#leadership" class="block font-medium text-slate-700 hover:text-ayesha-cyan py-1">Leadership</a>
+            <a href="#divisions" class="block font-medium text-slate-700 hover:text-ayesha-cyan py-1">Divisions</a>
+            <a href="#products" class="block font-medium text-slate-700 hover:text-ayesha-cyan py-1">Ayesha Soda</a>
+            <a href="#orgchart" class="block font-medium text-slate-700 hover:text-ayesha-cyan py-1">Organization Chart</a>
+            <a href="#contact" class="block font-medium text-slate-700 hover:text-ayesha-cyan py-1">Contact</a>
+            <div class="pt-2">
+                <a href="https://wa.me/917666589729?text=Hello%20Ayesha%20Cropz" target="_blank" class="w-full bg-emerald-600 text-white text-center py-2.5 rounded-xl font-semibold flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative brand-gradient text-white py-24 lg:py-32 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full text-cyan-200 text-xs sm:text-sm font-semibold border border-white/20">
+                        <i class="fa-solid fa-award"></i> Multi-Industry Leader in Raigad, Maharashtra
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        One Vision. One Team. <br><span class="text-cyan-300">Many Achievements.</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-slate-200 max-w-2xl mx-auto lg:mx-0 font-light">
+                        Welcome to <strong>Ayesha Cropz</strong>. Your trusted partner in Beverage Manufacturing (Ayesha Soda), Agriculture & Poultry Hatchery, Travel & Ticketing Services, and Government E-Seva/CSC Customer Service.
+                    </p>
+                    <div class="flex flex-wrap gap-4 justify-center lg:justify-start pt-4">
+                        <a href="#divisions" class="bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-4 rounded-xl font-bold shadow-lg transition transform hover:-translate-y-0.5 flex items-center gap-2">
+                            Explore Our Divisions <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#products" class="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-xl font-bold backdrop-blur-sm transition flex items-center gap-2">
+                            <i class="fa-solid fa-bottle-droplet"></i> View Ayesha Soda
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Badge / Quick Contact Card -->
+                <div class="lg:col-span-5">
+                    <div class="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-8 shadow-2xl text-white space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-16 h-16 rounded-2xl bg-white/20 flex items-center justify-center text-3xl font-bold text-cyan-300">
+                                <i class="fa-solid fa-building-shield"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold">Ayesha Business Center</h3>
+                                <p class="text-xs text-cyan-200">Headquartered at Mhasala, Raigad</p>
+                            </div>
+                        </div>
+                        <hr class="border-white/10">
+                        <div class="space-y-4 text-sm">
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-location-dot text-cyan-300 mt-1"></i>
+                                <span>At Post & Tal Mhasala, Opp HP Petrol Pump, Mhasala, Dist. Raigad – 402105</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-phone text-cyan-300"></i>
+                                <a href="tel:+917666589729" class="hover:underline">+91 76665 89729</a>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-envelope text-cyan-300"></i>
+                                <a href="mailto:sales@ayeshacropz.co.in" class="hover:underline">sales@ayeshacropz.co.in</a>
+                            </div>
+                        </div>
+                        <div class="pt-2">
+                            <a href="#contact" class="w-full bg-white text-ayesha-blue hover:bg-cyan-50 py-3 rounded-xl font-bold text-center block shadow transition">
+                                Get in Touch Today
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Managing Partner Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-ayesha-cyan font-bold uppercase tracking-widest text-sm bg-ayesha-lightCyan px-3 py-1 rounded-full">Leadership & Vision</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-ayesha-blue mt-3">Leading with Vision. Delivering with Commitment!</h2>
+                <p class="text-slate-600 mt-4 text-lg">Together, we build stronger foundations and create lasting value for our team, clients, and partners.</p>
+            </div>
+
+            <!-- Managing Partner Spotlight -->
+            <div id="leadership" class="bg-gradient-to-br from-ayesha-lightCyan to-slate-100 rounded-3xl p-8 sm:p-12 border border-slate-200 shadow-xl mb-20">
+                <div class="grid lg:grid-cols-12 gap-10 items-center">
+                    <div class="lg:col-span-5 text-center">
+                        <div class="relative inline-block">
+                            <div class="w-48 h-48 sm:w-60 sm:h-60 rounded-full bg-ayesha-blue border-4 border-ayesha-cyan shadow-2xl mx-auto flex items-center justify-center text-white text-6xl overflow-hidden">
+                                <i class="fa-solid fa-user-tie text-ayesha-accent"></i>
+                            </div>
+                            <div class="absolute bottom-2 right-2 bg-emerald-600 text-white px-4 py-1.5 rounded-full text-xs font-bold shadow-lg">
+                                Managing Partner
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-extrabold text-ayesha-blue mt-6">Ahmed Logde</h3>
+                        <p class="text-ayesha-cyan font-semibold text-sm">Managing Partner & Founder</p>
+                    </div>
+                    <div class="lg:col-span-7 space-y-6">
+                        <div class="inline-block bg-white px-4 py-2 rounded-xl shadow-sm border border-slate-200 text-ayesha-blue font-semibold text-sm">
+                            <i class="fa-solid fa-quote-left text-ayesha-cyan mr-2"></i> "That's *Active* Leadership! Now, I make them align!"
+                        </div>
+                        <h4 class="text-2xl sm:text-3xl font-bold text-slate-800">Driving Excellence Across Multi-Sector Operations</h4>
+                        <p class="text-slate-600 leading-relaxed">
+                            Under the visionary leadership of <strong>Ahmed Logde</strong>, Ayesha Cropz has expanded from its core roots into a diversified enterprise spanning beverage manufacturing, sustainable agriculture, travel solutions, and critical digital citizen services.
+                        </p>
+                        <div class="grid sm:grid-cols-2 gap-4 pt-2">
+                            <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-200 flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-lg bg-cyan-100 text-ayesha-cyan flex items-center justify-center font-bold">
+                                    <i class="fa-solid fa-bullseye"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-bold text-slate-800 text-sm">Strategic Vision</h5>
+                                    <p class="text-xs text-slate-500">Sustainable growth & execution</p>
+                                </div>
+                            </div>
+                            <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-200 flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-lg bg-blue-100 text-ayesha-blue flex items-center justify-center font-bold">
+                                    <i class="fa-solid fa-users"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-bold text-slate-800 text-sm">Strong Team</h5>
+                                    <p class="text-xs text-slate-500">People first, success follows</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Core Pillars -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-6 text-center">
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-xl bg-ayesha-cyan/10 text-ayesha-cyan flex items-center justify-center mx-auto text-xl mb-4">
+                        <i class="fa-solid fa-crosshairs"></i>
+                    </div>
+                    <h5 class="font-bold text-slate-800">Clear Goals</h5>
+                    <p class="text-xs text-slate-500 mt-1">Focused execution & targeted milestones.</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-xl bg-ayesha-cyan/10 text-ayesha-cyan flex items-center justify-center mx-auto text-xl mb-4">
+                        <i class="fa-solid fa-user-group"></i>
+                    </div>
+                    <h5 class="font-bold text-slate-800">Strong Team</h5>
+                    <p class="text-xs text-slate-500 mt-1">Collaborative experts delivering excellence.</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-xl bg-ayesha-cyan/10 text-ayesha-cyan flex items-center justify-center mx-auto text-xl mb-4">
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+                    <h5 class="font-bold text-slate-800">Smart Execution</h5>
+                    <p class="text-xs text-slate-500 mt-1">Efficient operations and seamless delivery.</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-xl bg-ayesha-cyan/10 text-ayesha-cyan flex items-center justify-center mx-auto text-xl mb-4">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h5 class="font-bold text-slate-800">Safe Practices</h5>
+                    <p class="text-xs text-slate-500 mt-1">Adherence to highest safety & hygiene standards.</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:shadow-md transition sm:col-span-2 lg:col-span-1">
+                    <div class="w-12 h-12 rounded-xl bg-ayesha-cyan/10 text-ayesha-cyan flex items-center justify-center mx-auto text-xl mb-4">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h5 class="font-bold text-slate-800">Sustainable Growth</h5>
+                    <p class="text-xs text-slate-500 mt-1">Creating long-term value for all stakeholders.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Divisions Section -->
+    <section id="divisions" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-ayesha-cyan font-bold uppercase tracking-widest text-sm bg-white px-3 py-1 rounded-full shadow-sm">Our Operations</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-ayesha-blue mt-3">Comprehensive Business Divisions</h2>
+                <p class="text-slate-600 mt-4 text-lg">Delivering trusted quality and professional services across multiple industry sectors.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Division 1: Ayesha Soda -->
+                <div class="bg-white rounded-3xl p-6 shadow-lg border border-slate-200 flex flex-col justify-between hover:-translate-y-1 transition duration-300">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-cyan-100 text-ayesha-cyan flex items-center justify-center text-2xl font-bold mb-6">
+                            <i class="fa-solid fa-bottle-droplet"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-ayesha-blue">Ayesha Soda</h3>
+                        <p class="text-slate-600 text-sm mt-3 leading-relaxed">
+                            Premium carbonated beverage manufacturing offering refreshing flavors like Classic Cola, Strawberry Lemon, Lime Fresh, Orange Zing, and Blueberry Blast.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-100">
+                        <a href="#products" class="text-ayesha-cyan font-bold text-sm flex items-center gap-2 hover:underline">
+                            Explore Flavors <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Division 2: Agriculture & Poultry -->
+                <div class="bg-white rounded-3xl p-6 shadow-lg border border-slate-200 flex flex-col justify-between hover:-translate-y-1 transition duration-300">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center text-2xl font-bold mb-6">
+                            <i class="fa-solid fa-egg"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-ayesha-blue">Chicken Hatchery</h3>
+                        <p class="text-slate-600 text-sm mt-3 leading-relaxed">
+                            Sustainable poultry solutions delivering quality chicks, ethical farming practices, and robust agricultural support across Raigad and beyond.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-100">
+                        <a href="#contact" class="text-ayesha-cyan font-bold text-sm flex items-center gap-2 hover:underline">
+                            Inquire Now <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Division 3: Travel Services -->
+                <div class="bg-white rounded-3xl p-6 shadow-lg border border-slate-200 flex flex-col justify-between hover:-translate-y-1 transition duration-300">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-blue-100 text-blue-700 flex items-center justify-center text-2xl font-bold mb-6">
+                            <i class="fa-solid fa-plane-departure"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-ayesha-blue">Travel Services</h3>
+                        <p class="text-slate-600 text-sm mt-3 leading-relaxed">
+                            Comprehensive travel solutions including flight/train ticketing, hotel reservations, tour packages, and seamless documentation support.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-100">
+                        <a href="#contact" class="text-ayesha-cyan font-bold text-sm flex items-center gap-2 hover:underline">
+                            Book Travel <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Division 4: Regional E-Seva/CSC -->
+                <div class="bg-white rounded-3xl p-6 shadow-lg border border-slate-200 flex flex-col justify-between hover:-translate-y-1 transition duration-300">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-2xl font-bold mb-6">
+                            <i class="fa-solid fa-landmark"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-ayesha-blue">CSC Customer Service</h3>
+                        <p class="text-slate-600 text-sm mt-3 leading-relaxed">
+                            Authorized Common Service Center (CSC) providing digital and government e-seva services efficiently to citizens in Mhasala and surrounding regions.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-100">
+                        <a href="#contact" class="text-ayesha-cyan font-bold text-sm flex items-center gap-2 hover:underline">
+                            Access Services <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ayesha Soda Product Showcase Section -->
+    <section id="products" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-ayesha-cyan font-bold uppercase tracking-widest text-sm bg-ayesha-lightCyan px-3 py-1 rounded-full">Beverage Division</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-ayesha-blue mt-3">Refresh Your Day with Every Sip!</h2>
+                <p class="text-slate-600 mt-4 text-lg">A burst of flavor in every bottle. Fun. Fizzy. Absolutely Refreshing!</p>
+            </div>
+
+            <!-- Soda Flavors Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
+                <!-- Flavor 1: Blueberry Blast -->
+                <div class="bg-slate-50 rounded-3xl p-6 border border-slate-200 text-center hover:shadow-xl transition group">
+                    <div class="h-48 flex items-center justify-center mb-4 relative">
+                        <div class="absolute inset-0 bg-blue-100 rounded-2xl opacity-50 group-hover:scale-105 transition"></div>
+                        <!-- Bottle SVG Representation -->
+                        <div class="relative z-10 w-20 h-40 bg-gradient-to-b from-blue-400 to-blue-600 rounded-t-full rounded-b-2xl shadow-lg flex flex-col items-center justify-center text-white border-2 border-white">
+                            <span class="text-[10px] font-bold uppercase tracking-wider bg-white/20 px-2 py-0.5 rounded mb-1">Ayesha</span>
+                            <span class="text-xs font-black">BLUEBERRY</span>
+                        </div>
+                    </div>
+                    <h3 class="font-extrabold text-lg text-ayesha-blue">Blueberry Blast</h3>
+                    <p class="text-xs text-slate-500 mt-1">Sweet & Tangy Spark with crisp effervescence.</p>
+                    <span class="inline-block mt-4 text-xs font-bold text-blue-600 bg-blue-50 px-3 py-1 rounded-full">Chilled Perfection</span>
+                </div>
+
+                <!-- Flavor 2: Classic Cola -->
+                <div class="bg-slate-50 rounded-3xl p-6 border border-slate-200 text-center hover:shadow-xl transition group">
+                    <div class="h-48 flex items-center justify-center mb-4 relative">
+                        <div class="absolute inset-0 bg-amber-100 rounded-2xl opacity-50 group-hover:scale-105 transition"></div>
+                        <div class="relative z-10 w-20 h-40 bg-gradient-to-b from-amber-800 to-stone-900 rounded-t-full rounded-b-2xl shadow-lg flex flex-col items-center justify-center text-white border-2 border-white">
+                            <span class="text-[10px] font-bold uppercase tracking-wider bg-white/20 px-2 py-0.5 rounded mb-1">Ayesha</span>
+                            <span class="text-xs font-black">COLA</span>
+                        </div>
+                    </div>
+                    <h3 class="font-extrabold text-lg text-ayesha-blue">Classic Cola</h3>
+                    <p class="text-xs text-slate-500 mt-1">Original fizzy taste and timeless refreshment.</p>
+                    <span class="inline-block mt-4 text-xs font-bold text-amber-800 bg-amber-50 px-3 py-1 rounded-full">Original Fizz</span>
+                </div>
+
+                <!-- Flavor 3: Orange Zing -->
+                <div class="bg-slate-50 rounded-3xl p-6 border border-slate-200 text-center hover:shadow-xl transition group">
+                    <div class="h-48 flex items-center justify-center mb-4 relative">
+                        <div class="absolute inset-0 bg-orange-100 rounded-2xl opacity-50 group-hover:scale-105 transition"></div>
+                        <div class="relative z-10 w-20 h-40 bg-gradient-to-b from-orange-400 to-orange-600 rounded-t-full rounded-b-2xl shadow-lg flex flex-col items-center justify-center text-white border-2 border-white">
+                            <span class="text-[10px] font-bold uppercase tracking-wider bg-white/20 px-2 py-0.5 rounded mb-1">Ayesha</span>
+                            <span class="text-xs font-black">ORANGE</span>
+                        </div>
+                    </div>
+                    <h3 class="font-extrabold text-lg text-ayesha-blue">Orange Zing</h3>
+                    <p class="text-xs text-slate-500 mt-1">Citrus kick with vibrant fruity energy.</p>
+                    <span class="inline-block mt-4 text-xs font-bold text-orange-600 bg-orange-50 px-3 py-1 rounded-full">Citrus Kick</span>
+                </div>
+
+                <!-- Flavor 4: Lime Fresh -->
+                <div class="bg-slate-50 rounded-3xl p-6 border border-slate-200 text-center hover:shadow-xl transition group">
+                    <div class="h-48 flex items-center justify-center mb-4 relative">
+                        <div class="absolute inset-0 bg-emerald-100 rounded-2xl opacity-50 group-hover:scale-105 transition"></div>
+                        <div class="relative z-10 w-20 h-40 bg-gradient-to-b from-emerald-400 to-emerald-600 rounded-t-full rounded-b-2xl shadow-lg flex flex-col items-center justify-center text-white border-2 border-white">
+                            <span class="text-[10px] font-bold uppercase tracking-wider bg-white/20 px-2 py-0.5 rounded mb-1">Ayesha</span>
+                            <span class="text-xs font-black">LIME FRESH</span>
+                        </div>
+                    </div>
+                    <h3 class="font-extrabold text-lg text-ayesha-blue">Lime Fresh</h3>
+                    <p class="text-xs text-slate-500 mt-1">Cool & refreshing lemon-lime revitalization.</p>
+                    <span class="inline-block mt-4 text-xs font-bold text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full">Cool & Refreshing</span>
+                </div>
+
+                <!-- Flavor 5: Strawberry Lemon -->
+                <div class="bg-slate-50 rounded-3xl p-6 border border-slate-200 text-center hover:shadow-xl transition group sm:col-span-2 lg:col-span-1">
+                    <div class="h-48 flex items-center justify-center mb-4 relative">
+                        <div class="absolute inset-0 bg-rose-100 rounded-2xl opacity-50 group-hover:scale-105 transition"></div>
+                        <div class="relative z-10 w-20 h-40 bg-gradient-to-b from-rose-400 to-rose-600 rounded-t-full rounded-b-2xl shadow-lg flex flex-col items-center justify-center text-white border-2 border-white">
+                            <span class="text-[10px] font-bold uppercase tracking-wider bg-white/20 px-2 py-0.5 rounded mb-1">Ayesha</span>
+                            <span class="text-xs font-black">STRAWBERRY</span>
+                        </div>
+                    </div>
+                    <h3 class="font-extrabold text-lg text-ayesha-blue">Strawberry Lemon</h3>
+                    <p class="text-xs text-slate-500 mt-1">Sweet meets soar in a delightful blend.</p>
+                    <span class="inline-block mt-4 text-xs font-bold text-rose-600 bg-rose-50 px-3 py-1 rounded-full">Sweet Meets Soar</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organization Chart Section -->
+    <section id="orgchart" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-ayesha-cyan font-bold uppercase tracking-widest text-sm bg-white px-3 py-1 rounded-full shadow-sm">Corporate Hierarchy</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-ayesha-blue mt-3">Organization Chart</h2>
+                <p class="text-slate-600 mt-4 text-lg">Structured for operational excellence, accountability, and swift client service.</p>
+            </div>
+
+            <!-- Org Chart Tree UI -->
+            <div class="bg-white rounded-3xl p-8 sm:p-12 shadow-xl border border-slate-200 overflow-x-auto">
+                <div class="min-w-[800px] flex flex-col items-center space-y-8">
+                    <!-- Top Node: Managing Partner -->
+                    <div class="bg-ayesha-blue text-white px-8 py-4 rounded-2xl shadow-lg text-center border-2 border-ayesha-cyan">
+                        <div class="text-xs font-semibold text-cyan-300 uppercase tracking-widest">Managing Partner</div>
+                        <div class="text-xl font-bold mt-1">Ahmed Logde</div>
+                    </div>
+
+                    <!-- Connecting Line -->
+                    <div class="w-0.5 h-8 bg-slate-300"></div>
+
+                    <!-- Level 2 Divisions -->
+                    <div class="grid grid-cols-4 gap-6 w-full">
+                        <!-- Operations & Production -->
+                        <div class="bg-ayesha-teal text-white p-4 rounded-2xl text-center shadow">
+                            <div class="text-xs font-bold text-cyan-200">DIV 1</div>
+                            <div class="font-bold text-sm mt-1">Operations & Production</div>
+                        </div>
+                        <!-- Sales & Marketing -->
+                        <div class="bg-ayesha-teal text-white p-4 rounded-2xl text-center shadow">
+                            <div class="text-xs font-bold text-cyan-200">DIV 2</div>
+                            <div class="font-bold text-sm mt-1">Sales & Marketing</div>
+                        </div>
+                        <!-- Finance & Accounts -->
+                        <div class="bg-ayesha-teal text-white p-4 rounded-2xl text-center shadow">
+                            <div class="text-xs font-bold text-cyan-200">DIV 3</div>
+                            <div class="font-bold text-sm mt-1">Finance & Accounts</div>
+                        </div>
+                        <!-- Administration & Support -->
+                        <div class="bg-ayesha-teal text-white p-4 rounded-2xl text-center shadow">
+                            <div class="text-xs font-bold text-cyan-200">DIV 4</div>
+                            <div class="font-bold text-sm mt-1">Administration & Support</div>
+                        </div>
+                    </div>
+
+                    <!-- Level 3 Sub-roles -->
+                    <div class="grid grid-cols-4 gap-6 w-full pt-4 border-t border-slate-200">
+                        <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl text-center text-xs font-bold text-slate-700">
+                            Production Supervisor / Machine Operators / QC / Hatchery Crew
+                        </div>
+                        <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl text-center text-xs font-bold text-slate-700">
+                            Sales Executives & Delivery Drivers
+                        </div>
+                        <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl text-center text-xs font-bold text-slate-700">
+                            Accountants & Accounts Assistants
+                        </div>
+                        <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl text-center text-xs font-bold text-slate-700">
+                            Office Admin, Store & Purchase Assistants
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Inquiry Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12">
+                <!-- Contact Information -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-ayesha-cyan font-bold uppercase tracking-widest text-sm bg-ayesha-lightCyan px-3 py-1 rounded-full">Get In Touch</span>
+                        <h2 class="text-3xl font-extrabold text-ayesha-blue mt-3">Let's Connect & Grow Together</h2>
+                        <p class="text-slate-600 mt-3 text-sm leading-relaxed">
+                            Have inquiries about Ayesha Soda distributorship, poultry hatchery orders, travel ticketing, or CSC services? Reach out to us directly.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-ayesha-lightCyan text-ayesha-cyan flex items-center justify-center shrink-0 text-xl font-bold">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-800">Official Address</h4>
+                                <p class="text-sm text-slate-600 mt-1">At Post & Tal Mhasala, Opp HP Petrol Pump, Mhasala, Dist. Raigad – 402105</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-ayesha-lightCyan text-ayesha-cyan flex items-center justify-center shrink-0 text-xl font-bold">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-800">Phone Numbers</h4>
+                                <p class="text-sm text-slate-600 mt-1"><a href="tel:+917666589729" class="hover:text-ayesha-cyan font-semibold">+91 76665 89729</a></p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-ayesha-lightCyan text-ayesha-cyan flex items-center justify-center shrink-0 text-xl font-bold">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-800">Email Addresses</h4>
+                                <p class="text-sm text-slate-600 mt-1">
+                                    <a href="mailto:info@ayeshacropz.co.in" class="hover:text-ayesha-cyan font-semibold block">info@ayeshacropz.co.in</a>
+                                    <a href="mailto:sales@ayeshacropz.co.in" class="hover:text-ayesha-cyan font-semibold block">sales@ayeshacropz.co.in</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- WhatsApp Quick Chat Box -->
+                    <div class="bg-emerald-50 border border-emerald-200 rounded-2xl p-6 flex items-center justify-between">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-emerald-600 text-white flex items-center justify-center text-2xl">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-emerald-900">Chat Instantly</h4>
+                                <p class="text-xs text-emerald-700">Connect with our team on WhatsApp</p>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/917666589729?text=Hello%20Ayesha%20Cropz" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2.5 rounded-xl font-bold text-xs shadow transition">
+                            Open Chat
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Inquiry Form -->
+                <div class="lg:col-span-7 bg-slate-50 rounded-3xl p-8 sm:p-10 border border-slate-200 shadow-lg">
+                    <h3 class="text-2xl font-bold text-ayesha-blue mb-6">Send Us an Inquiry</h3>
+                    <form id="inquiry-form" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Full Name *</label>
+                                <input type="text" id="name" required class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-ayesha-cyan" placeholder="Enter your name">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Phone Number *</label>
+                                <input type="tel" id="phone" required class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-ayesha-cyan" placeholder="+91 XXXXX XXXXX">
+                            </div>
+                        </div>
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Email Address</label>
+                                <input type="email" id="email" class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-ayesha-cyan" placeholder="your@email.com">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Select Division / Interest *</label>
+                                <select id="division" required class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-ayesha-cyan">
+                                    <option value="">Choose Division...</option>
+                                    <option value="Ayesha Soda Distributorship">Ayesha Soda Distributorship</option>
+                                    <option value="Agriculture & Poultry Hatchery">Agriculture & Poultry Hatchery</option>
+                                    <option value="Travel Services">Travel Services</option>
+                                    <option value="CSC / E-Seva Services">CSC / E-Seva Services</option>
+                                    <option value="General Inquiry">General Business Inquiry</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Your Message *</label>
+                            <textarea id="message" rows="4" required class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-ayesha-cyan" placeholder="How can we help you?"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-ayesha-blue hover:bg-ayesha-teal text-white font-bold py-4 rounded-xl shadow-lg transition flex items-center justify-center gap-2">
+                            <span>Submit Inquiry</span> <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <!-- Success Message Box -->
+                    <div id="form-success" class="hidden mt-6 bg-emerald-100 border border-emerald-300 text-emerald-800 p-4 rounded-xl text-center font-medium text-sm">
+                        Thank you! Your inquiry has been received. Our team will contact you shortly.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-ayesha-blue text-white pt-16 pb-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-ayesha-cyan flex items-center justify-center font-bold text-white">
+                            AC
+                        </div>
+                        <span class="text-xl font-extrabold tracking-tight">Ayesha Cropz</span>
+                    </div>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Empowering Business Success Now. Multi-sector leadership spanning beverage manufacturing, poultry hatchery, travel solutions, and digital e-seva services.
+                    </p>
+                    <div class="text-xs text-cyan-300 font-medium">
+                        Domain: ayeshacropz.co.in (Variant: ayeshscropz.co.in)
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-sm font-bold uppercase tracking-wider text-cyan-300 mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm text-slate-300">
+                        <li><a href="#home" class="hover:text-cyan-300 transition">Home</a></li>
+                        <li><a href="#about" class="hover:text-cyan-300 transition">About Us</a></li>
+                        <li><a href="#leadership" class="hover:text-cyan-300 transition">Managing Partner</a></li>
+                        <li><a href="#divisions" class="hover:text-cyan-300 transition">Business Divisions</a></li>
+                        <li><a href="#products" class="hover:text-cyan-300 transition">Ayesha Soda Flavors</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-sm font-bold uppercase tracking-wider text-cyan-300 mb-4">Our Divisions</h4>
+                    <ul class="space-y-2 text-sm text-slate-300">
+                        <li><span class="hover:text-cyan-300 transition">Ayesha Soda Manufacturing</span></li>
+                        <li><span class="hover:text-cyan-300 transition">Chicken Hatchery & Poultry</span></li>
+                        <li><span class="hover:text-cyan-300 transition">Travel & Ticketing Services</span></li>
+                        <li><span class="hover:text-cyan-300 transition">CSC / E-Seva Citizen Services</span></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-sm font-bold uppercase tracking-wider text-cyan-300 mb-4">Contact Info</h4>
+                    <ul class="space-y-3 text-sm text-slate-300">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-location-dot text-cyan-300 mt-1"></i>
+                            <span>At Post & Tal Mhasala, Opp HP Petrol Pump, Mhasala, Raigad – 402105</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-phone text-cyan-300"></i>
+                            <span>+91 76665 89729</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-envelope text-cyan-300"></i>
+                            <span>info@ayeshacropz.co.in</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="border-slate-800 mb-8">
+
+            <div class="flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
+                <p>&copy; 2026 Ayesha Cropz. All Rights Reserved. Designed for ayeshacropz.co.in</p>
+                <div class="flex items-center gap-4">
+                    <a href="https://wa.me/917666589729" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp</a>
+                    <a href="mailto:sales@ayeshacropz.co.in" class="hover:text-white transition"><i class="fa-solid fa-envelope text-lg"></i> Email</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on clicking links
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Form Submit Handler
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const division = document.getElementById('division').value;
+            const message = document.getElementById('message').value;
+
+            // Show success notification
+            const successBox = document.getElementById('form-success');
+            successBox.classList.remove('hidden');
+            
+            // Reset form
+            document.getElementById('inquiry-form').reset();
+
+            // Hide success box after 5 seconds
+            setTimeout(() => {
+                successBox.classList.add('hidden');
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
